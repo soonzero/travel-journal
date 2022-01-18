@@ -1,0 +1,121 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 12px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+}
+
+.container {
+  width: 550px;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 15px 15px 30px #adadad;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  background-color: #1687a7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.header > i {
+  margin-right: 5px;
+}
+
+.header > p {
+  font-size: 14.5px;
+  letter-spacing: -0.05em;
+}
+
+.cards {
+  padding: 40px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.main:last-child {
+  margin-bottom: 0;
+}
+
+.main--img {
+  width: 125px;
+  height: 100%;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.main--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main--map {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main i {
+  color: #1687a7;
+  font-size: 10px;
+  margin-right: 2.5px;
+}
+
+.country {
+  color: #2b283a;
+  margin-right: 10px;
+}
+
+.google-map {
+  color: #918e9b;
+  text-decoration: underline;
+}
+
+.main--location {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.main--period {
+  margin-bottom: 10px;
+}
+
+.main--desc {
+  font-weight: 300;
+}
+
+.more {
+  width: 100%;
+  height: 55px;
+  background-color: #d3e0ea;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+  font-weight: 600;
+  font-size: 15px;
+}

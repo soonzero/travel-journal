@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Components/Header";
+import Main from "./Components/Main";
+import travel from "./travel";
+import More from "./Components/More";
 
 function App() {
+  const locations = travel.map((spot) => {
+    return (
+      <Main
+        key={spot.id}
+        img={spot.img}
+        country={spot.country}
+        location={spot.location}
+        from={spot.from}
+        to={spot.to}
+        description={spot.description}
+      />
+    );
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
+      <div className="cards">{locations}</div>
+      <More />
     </div>
   );
 }
